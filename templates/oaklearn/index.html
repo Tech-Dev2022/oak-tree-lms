@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en">
+    
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        {% load static %}
+        <!--CSS Link-->
+        <link rel="stylesheet" href="{% static "css/style.css"%}" />
+
+        <!-- Java Script-->
         <title>Oak Learn</title>
+
     </head>
 
     <body>
@@ -14,12 +25,18 @@
             acron, the bird waits in the egg, and in the <br/>
             highest vision of the sould a waking angel <br />
             stirs. Dreams are the seedings of realities. <br />
+          
             James Allen 
             <strong>{{ boldmessage }}</strong><br />
         </div>
 
         <div>
             <a href="/oaklearn/index/">Index</a><br />
+            <img src="{% static "images/oak tree.jpg" %}" height=200px width=200px class="d-inline-block align-top"
+                alt="Picture of Oak Tree" /> <!-- New line -->
+
+
+                
         </div>
     </body>
 
