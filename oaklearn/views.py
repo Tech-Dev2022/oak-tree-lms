@@ -17,3 +17,7 @@ def index(request):
 
 def contacts(request):
     return HttpResponse("find email below \n chewe.kasonde@outlook.com")
+
+def about(request):
+    # Rendering the about us page
+    return render(request,'oaklearn/about.html')
